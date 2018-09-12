@@ -18,7 +18,7 @@
             max-height: 10vh;
         }
 
-        .banner {
+        .header {
             height: 85vh;
             background-image: linear-gradient( to right bottom,
             rgba(100, 100, 100, 0.8),
@@ -30,6 +30,16 @@
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         }
+
+        .header__content {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: white;
+            text-shadow: 3px 3px #000000;
+        }
+
     </style>
 
     <title>Dunder Mifflin</title>
@@ -67,11 +77,15 @@
         </div>
     </nav>
     <!-- END NAVBAR -->
-    <!-- BANNER -->
-    <div class="banner">
-        <!-- <img src="assets/img/dunderBuilding.jpg" alt=""> -->
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header__content">
+            <h1>Dunder Mifflin Paper Company, Inc.</h1>
+            <p>The people person's paper people</p>
+        </div>
     </div>
-    <!-- END BANNER -->
+    <!-- END HEADER -->
+
 
 
     <!-- Optional JavaScript -->
